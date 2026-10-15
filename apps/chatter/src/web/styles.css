@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    color: #1d1c1d;
+}
+
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 240px;
+    background: #3f0e40;
+    color: #fff;
+    padding: 16px 8px;
+}
+
+.sidebar h1 {
+    font-size: 20px;
+    margin: 0 8px 16px;
+}
+
+.channel {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 6px 8px;
+    border: 0;
+    border-radius: 4px;
+    background: transparent;
+    color: #cfc3cf;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.channel.active {
+    background: #1164a3;
+    color: #fff;
+}
+
+.messages {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.messages header {
+    padding: 16px 20px;
+    border-bottom: 1px solid #ddd;
+    font-weight: 700;
+}
+
+.messages ul {
+    list-style: none;
+    margin: 0;
+    padding: 12px 20px;
+    overflow-y: auto;
+}
+
+.messages li {
+    padding: 8px 0;
+}
+
+.meta {
+    display: flex;
+    gap: 8px;
+    align-items: baseline;
+}
+
+.meta time {
+    color: #616061;
+    font-size: 12px;
+}
+
+.error {
+    margin: 12px 20px;
+    color: #b00020;
+}
